@@ -2,4 +2,4 @@
   # ansible.builtin.import_tasks: nodejs.yml
   ansible.builtin.roles:
       name: common
-      tasks_from: nodejs
+      tasks_from: nodejs.yml
