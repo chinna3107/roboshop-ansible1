@@ -2,6 +2,6 @@
 #  ansible.builtin.import_tasks: java.yml
 
 - name: Java Setup
-  ansible.builtin.roles:
+  ansible.builtin.import_role:
      name: common
      tasks_from: java
