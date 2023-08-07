@@ -1,4 +1,4 @@
 - name: NodeJS Setup
-  ansible.builtin.roles:
+  ansible.builtin.role:
     name: common
     tasks_from: nodejs
