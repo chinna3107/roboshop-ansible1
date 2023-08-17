@@ -1,6 +1,7 @@
 - name: Install Nginx
   ansible.builtin.yum:
     name: nginx
+    become: true
     state: installed
 
 - name: Copy Roboshop configuration
@@ -27,6 +28,5 @@
 - name: Restart Nginx
   ansible.builtin.systemd:
      name: nginx
-     become: yes
      state: restarted
      enabled: yes
